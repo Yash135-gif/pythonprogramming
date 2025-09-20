@@ -51,3 +51,57 @@
 # l=["yash1","yash2","yash3"]
 # s=" ".join(l)
 # print(s)
+# l=["name","age","quali"]
+# # d2=dict.fromkeys(l)
+# # print(d2)
+# print(d1.get("name"))
+# print(d1.keys())
+# print(d1.values())
+# print(d1.items())
+# d1.setdefault("city","bhopal")
+# d1.setdefault("name","yash1")
+# print(d1)
+# d1={"name":"yash","age":21,"quali":"BCA"}
+# d1.update(name="yash1",city="bhopal")
+# print(d1)
+# s={10,230,29,38}
+# print(s)
+# print(type(s))
+# class student:
+#   def __init__(self):
+#     print("constructor called")
+#     print(id(self))
+# obj=student()
+# obj.__init__()
+# print(id(obj),id(student))
+# class student:
+#     school="SHSS"
+#     def detail(self,name,email,contact):
+#         print(name,email,contact)
+#         print(id(self))
+# obj1=student()
+# print(obj1.school)
+# print(obj1.detail("yash","hfsafh",4953))
+# obj2=student()
+# print(obj2.school)
+# print(obj2.detail("yoo","doubleyoo",34943))
+# print(id(obj1),id(obj2),id(student))
+# class student:
+#     def __init__(self):
+#         print(id(self))
+# obj=student()
+# print(id(student))
+# print(id(obj))
+# class student:
+#     def __init__(self,name,grad):
+#         self.n=name
+#         self.g=grad
+# obj=student("yash","BCA")
+# print(obj.n)
+# print(obj.g)
+# def new():
+#     global x
+#     x=10
+#     return x
+# print(new())
+# print(x)
