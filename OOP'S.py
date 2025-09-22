@@ -24,4 +24,37 @@
 # print(student.__doc__)
 # print(dir())
 # print(__name__)
+# class student:
+#     school='shss'
+#     def __init__(self,name):
+#         self.n=name
+#         student.principal='python'
+
+#     def add_new(self, contact):
+#         self.c=contact
+#         student.city='city'
+#         x=10
+# student.school_code=101
+# obj=student('neeraj')
+# obj.email='ygmail.com'
+class student:
+    school='shss'
+    def __init__(self,name):
+        self.n=name
+        student.principal='python'
+        print(student.school_code)
+    def add_new(self,contact):
+        self.c=contact
+        student.city='bhopal'
+        print(student.school_code,student.principal,student.city)
+        x=10
+student.school_code=101
+obj=student('yash')
+obj.email='yemail.com'
+obj.add_new(1234)
+print(student.city)
+
+
+
+
 

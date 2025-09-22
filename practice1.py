@@ -105,3 +105,47 @@
 #     return x
 # print(new())
 # print(x)
+# s={1,2,3,"yash"}
+# s.clear()
+# print(s)
+# s={1,2,3,"yash"}
+# s.add(4)
+# print(s)
+# s.update([5,6])
+# print(s)
+# s={1,12,3}
+# s1=s.copy()
+# print(s1)
+# s={1,2,3}
+# s.pop()
+# print(s)
+# s.pop()
+# print(s)
+# s={1,2,3,4,4}
+# s.remove(4)
+# print(s)
+# s.discard(4)
+# print(s)
+# print(s.union(s1))
+# print(s.intersection(s1))
+# print(s.intersection_update(s1))
+# print(s)
+# print(s.difference(s1))
+# print(s1.difference(s))
+# print(s.difference_update(s1))
+# print(s)
+# print(s.symmetric_difference(s1))
+# print(s1.symmetric_difference(s))
+# s.symmetric_difference_update(s1)
+# print(s)
+# s1.symmetric_difference_update(s)
+# print(s1)
+# s={1,2,3,4,5,6}
+# s1={5,6,7,8}
+# a=frozenset(s)
+# b=frozenset(s1)
+# print(type(a),type(b))
+# print(a.isdisjoint(b))
+# print(a.isdisjoint(b))
+
+
