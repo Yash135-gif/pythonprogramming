@@ -121,14 +121,14 @@
 
 # Checking if string is a valid identifier -------------------------------
 
-# import keyword
+import keyword
 
-# string=input("koi string dalo: ")
+string=input("koi string dalo: ")
 
-# if string.isidentifier() and not keyword.iskeyword(string):
-#     print(f"{string} is a valid identifier")
-# else:
-#     print(f"{string} not a valid indentifier")
+if string.isidentifier() and not keyword.iskeyword(string):
+    print(f"{string} is a valid identifier")
+else:
+    print(f"{string} not a valid indentifier")
 
 # Checking if a valid identifier with function ------------------------
 
@@ -647,5 +647,222 @@
 #     return l
 # n=int(input("enter: "))
 # print(even_numbers(n))
+
+# ---------------------------------------------
+
+# single Inheritance -------------------
+
+# class A:
+#     def message1(self):
+#         print("A message")
+# class B(A):
+#     def message2(self):
+#         print("B message")
+# obj=B()
+# obj.message1()
+# obj.message2()
+
+# Multilevel Inheritance -----------------------
+
+# class A:
+#     def showA(self):
+#         print("This is A")
+# class B(A):
+#     def showB(self):
+#         print("This is B")
+# class C(B):
+#     def showC(self):
+#         print("This is C")
+# obj=C()
+# obj.showA()
+# obj.showB()
+# obj.showC()
+
+# Multiple Inheritance ------------------------------
+
+# class father:
+#     def showfather(self):
+#         print("rep father")
+# class mother:
+#     def showmother(self):
+#         print("rep mother")
+# class child(father,mother):
+#     def showchild(self):
+#         print("rep child")
+# obj=child()
+# obj.showfather()
+# obj.showmother()
+
+# Heirarichal Inheritance ------------------
+
+# class parent:
+#     def show(self):
+#         print('this is parent')
+# class child1(parent):
+#     def showchild1(self):
+#         print("this is child1")
+# class child2(parent):
+#     def showchild2(self):
+#         print("this is child2")
+# obj=child1()
+# obj1=child2()
+# obj.show()
+# obj1.show()
+
+# Multiple Inheritance --------------------
+
+# class A:
+#     def show(self):
+#         print("A")
+# class B:
+#     def show(self):
+#         print("B")
+# class C(B,A):
+#     pass
+# obj=C()
+# obj.show()
+
+# herierical Inheritance ----------------
+
+# class A:
+#     def showA(self):
+#         print("A")
+# class B(A):
+#     def showB(self):
+#         print("B")
+# class C(A):
+#     def showC(self):
+#         print("C")
+# obj=C()
+# obj.showC()
+# obj.showA()
+
+# obj1=B()
+# obj1.showB()
+# obj1.showA()
+
+# overriding -------------------------
+
+# class animal:
+#     def speaks(self):
+#         print("animal speaks")
+# class dog(animal):
+#     def speaks(self):
+#         super().speaks()
+#         print("dog barks")
+# obj=dog()
+# obj.speaks()
+
+# hybrid Inheritance ---------------------------------
+
+# class A:
+#     def show(self):
+#         print("A")
+# class B(A):
+#     def show(self):
+#         print("B")
+# class C(A):
+#     def show(self):
+#         print("C")
+# class D(C,B):
+#     def show(self):
+#         super().show()
+#         print("D")
+# obj=D()
+# obj.show()
+
+# hybrid -----------------------------
+
+# class A:
+#     def showA(self):
+#         print("A")
+# class B(A):
+#     def showB(self):
+#         print("B")
+# class C(A):
+#     def showC(self):
+#         print("C")
+# class D(B,C):
+#     def showD(self):
+#         print("D")
+# obj=D()
+# obj.showA()
+# obj.showB()
+# obj.showC()
+# obj.showD()
+
+# factor nikalna ka tarika --------------------
+
+# n=int(input("enter a number: "))
+# for i in range(1,n+1):
+#     if n%i==0:
+#         print(i,end=" ")
+
+# ascending order ma rakhna ka liya ---------------------
+
+# l=[1,2,3,4,3,2,3,2,5]
+# n=len(l)
+# for i in range(n-1):
+#     for j in range(n-i-1):
+#         if l[j]>l[j+1]:
+#             l[j],l[j+1]=l[j+1],l[j]
+# print(l)
+
+# Arranging in descinding order --------------------
+
+# l=[1,2,4,2,3,3,2,2,3,2]
+# n=len(l)
+# for i in range(n-1):
+#     for j in range(n-i-1):
+#         if l[j]<l[j+1]:
+#             l[j],l[j+1]=l[j+1],l[j]
+# print(l)
+
+# finding maximum digit in a list ---------------------------
+
+# l=[1,2,3,4,3,2,3]
+# sum=l[0]
+# for i in range(len(l)-1):
+#     if l[i]>l[i+1]:
+#         sum=l[i]
+#         l[i],l[i+1]=l[i+1],l[i]
+#     else:
+#         sum=[i+1]
+# print(f'maximum digit {sum}')
+
+# finding minimun digit in a list ----------------------------
+
+# l=[2,3,2,1,4,5,6,3,4]
+# min=l[0]
+# for i in range(len(l)-1):
+#     if l[i]<l[i+1]:
+#         min=l[i]
+#         l[i],l[i+1]=l[i+1],l[i]
+#     else:
+#         min=l[i+1]
+# print(f"minumum digit: {min}")    
+
+# Abstraction --------------------------------
+
+# from abc import ABC,abstractmethod
+
+# class vehicle(ABC):
+#     @abstractmethod
+#     def start(self):
+#         pass
+#     @abstractmethod
+#     def stop(self):
+#         pass
+
+# class car(vehicle):
+#     def start(self):
+#         print("car start")
+#     def stop(self):
+#         print("car stop")
+# obj=car()
+# obj.start()
+# obj.stop()
+
+
 
 

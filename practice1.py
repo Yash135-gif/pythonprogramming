@@ -147,5 +147,58 @@
 # print(type(a),type(b))
 # print(a.isdisjoint(b))
 # print(a.isdisjoint(b))
+# n=int(input("enter: "))
+# for i in range(1,n+1):
+#     is_prime=False
+#     for j in range(2,int(i*0.5)+1):
+#         if i%j==0:
+#             is_prime=True
+#             break
+#     if i==1:
+#         print(i,end=" ")
+#     if is_prime:
+#         print(i,end=" ")
+
+# string='yash'
+# list_s=string.split()
+# print(list_s)
+# list_ss=list_s.reverse()
+# print(list_ss)
+# print(list_ss)
+
+# s='yash'
+# ss=''
+# for i in s:
+#     ss=i+ss
+# print(ss)
+
+# class A:
+#     def __init__(self):
+#         print("A")
+# class B(A):
+#     def __init__(self):
+#         super().__init__()
+#         print("B")
+# class C(B):
+#     def __init__(self):
+#         super().__init__()
+#         print("C")
+# obj=C()
+
+# class A:
+#     def show(self):
+#         print("A")
+# class B(A):
+#     def show(self):
+#         super().show()
+#         print("B")
+# class C(B):  
+#     def show(self):
+#         super().show()
+#         print("C")
+
+# obj=C()
+# obj.show()
+
 
 
