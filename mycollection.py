@@ -121,14 +121,14 @@
 
 # Checking if string is a valid identifier -------------------------------
 
-import keyword
+# import keyword
 
-string=input("koi string dalo: ")
+# string=input("koi string dalo: ")
 
-if string.isidentifier() and not keyword.iskeyword(string):
-    print(f"{string} is a valid identifier")
-else:
-    print(f"{string} not a valid indentifier")
+# if string.isidentifier() and not keyword.iskeyword(string):
+#     print(f"{string} is a valid identifier")
+# else:
+#     print(f"{string} not a valid indentifier")
 
 # Checking if a valid identifier with function ------------------------
 
@@ -863,6 +863,42 @@ else:
 # obj.start()
 # obj.stop()
 
+# polymorphism ---------------------
 
+# class player:
+#     def show(self):
+#         print("players runs")
+
+# class enemy:
+#     def show(self):
+#         print("enemy crawls")
+
+# class NPC:
+#     def show(self):
+#         print("Walks")
+
+# character=[player(),enemy(),NPC()]
+# for i in character:
+#     i.show()
+
+#  Example of polymorphism ---------------
+
+# class creditcard:
+#     def pay(self,amount):
+#         print(f"pay through creditcard amount {amount}")
+# class paypal:
+#     def pay(self,amount):
+#         print(f"pay through paypal amount {amount}")
+# class UPI:
+#     def pay(self,amount):
+#         print(f"pay through UPI amount {amount}")
+
+# def process_payment(payment_method,amount):
+#     payment_method.pay(amount)
+
+# payments=[creditcard(),paypal(),UPI()]
+
+# for method in payments:
+#     process_payment(method,500)
 
 

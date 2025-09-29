@@ -183,22 +183,46 @@
 
 # Abstraction -------------------------------------
 
-from abc import ABC,abstractmethod
+# from abc import ABC,abstractmethod
 
-class vehicle(ABC):
-    @abstractmethod
-    def start(self):
-        pass
+# class vehicle(ABC):
+#     @abstractmethod
+#     def start(self):
+#         pass
     
-    @abstractmethod
-    def stop(self):
-        pass
-class car(vehicle):
-    def start(self):
-        print("car start")
-    def stop(self):
-        print("car stop")
-obj=car()
-obj.start()
-obj.stop()
+#     @abstractmethod
+#     def stop(self):
+#         pass
+# class car(vehicle):
+#     def start(self):
+#         print("car start")
+#     def stop(self):
+#         print("car stop")
+# obj=car()
+# obj.start()
+# obj.stop()
         
+# class student:
+#     def __init__(self,name,age):
+#         self.n=name
+#         self.a=age
+#     def show(self):
+#         print(f"my name is {self.n} and i am {self.a} years old ")
+# obj=student("yash",21)
+# obj.show()
+
+# class student:
+#     def __init__(self,name,age):
+#         self.__name=name
+#         self._age=age
+#         self.rollno=101
+#     def show(self):
+#         print(self.__name,self._age,self.rollno)
+# obj=student('yash',21)
+# obj.show()
+# print(obj.rollno)
+# print(obj._age)
+# print(obj.__name)
+
+
+

@@ -200,5 +200,31 @@
 # obj=C()
 # obj.show()
 
-
+l=[3,3,5,2,4,8,3,3]
+# min=l[0]
+# for i in l:
+#     if min>i:
+#        min=i
+# print(min)
+# min=l[0]
+# for i in range(len(l)-1):
+#     if l[i]<l[i+1]:
+#         min=l[i]
+#         l[i],l[i+1]=l[i+1],l[i]
+#     else:
+#         min=l[i+1]
+# print(min)
+# max=l[0]
+# for i in l:
+#     if max<i:
+#         max=i
+# print(max)
+# max=l[0]
+# for i in range(len(l)-1):
+#     if l[i]>l[i+1]:
+#         max=l[i]
+#         l[i],l[i+1]=l[i+1],l[i]
+#     else:
+#         max=l[i+1]
+# print(max)
 

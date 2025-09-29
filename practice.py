@@ -1925,6 +1925,11 @@ b={3,6,7,8}
 #     my_list.append(num+5)
 # print(numbers)
 # print(my_list)
+# dusra tarika ----------------
+# numbers=[10,20,30,40,50]
+# for i in range(len(numbers)):
+#     numbers[i]=numbers[i]+5
+# print(numbers)
 # Example 9 --------------------------
 # t=(10,20,30,40,50)
 # new_tuple=tuple(x+5 for x in t)
@@ -2086,36 +2091,36 @@ b={3,6,7,8}
 # else:
 #     print("password is incorrect")
 # dusra tarika --------------------------
-n=input("enter your password")
-has_upper=False
-has_lower=False
-has_digit=False
-has_special=False
-special_characters="!@#$%^&*(),.?/':{}|<>"
-if len(n)<8:
-    print("your password must have eight characters")
-else:
-    for char in n:
-        if char.isdigit():
-            has_digit=True
-        elif char.isupper():
-            has_upper=True
-        elif char.islower():
-            has_lower=True
-        elif char in special_characters:
-            has_special=True
-    if not has_digit:
-        print("password must contain atleast one digit")
-    if not has_upper:
-        print("password must contain one uppercase character")
-    if not has_lower:
-        print("password must contain one lowercase character")
-    if not has_special:
-        print("password must contain one special character")
-    if has_upper and has_lower and has_digit and has_special and len(n)>=8:
-        print("password is valid")
-    else:
-        print("please fix the issue above")
+# n=input("enter your password")
+# has_upper=False
+# has_lower=False
+# has_digit=False
+# has_special=False
+# special_characters="!@#$%^&*(),.?/':{}|<>"
+# if len(n)<8:
+#     print("your password must have eight characters")
+# else:
+#     for char in n:
+#         if char.isdigit():
+#             has_digit=True
+#         elif char.isupper():
+#             has_upper=True
+#         elif char.islower():
+#             has_lower=True
+#         elif char in special_characters:
+#             has_special=True
+#     if not has_digit:
+#         print("password must contain atleast one digit")
+#     if not has_upper:
+#         print("password must contain one uppercase character")
+#     if not has_lower:
+#         print("password must contain one lowercase character")
+#     if not has_special:
+#         print("password must contain one special character")
+#     if has_upper and has_lower and has_digit and has_special and len(n)>=8:
+#         print("password is valid")
+#     else:
+        # print("please fix the issue above")
 # months_days = {
 #     "January": 31,
 #     "February": 28,  
