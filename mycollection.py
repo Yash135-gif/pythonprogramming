@@ -901,4 +901,50 @@
 # for method in payments:
 #     process_payment(method,500)
 
+# Example -------------------------
+
+# class book:
+#     def __init__(self,pages):
+#         self.pages=pages
+    
+#     def __add__(self,other):
+#         print(f"self.pages = {self.pages}")
+#         print(f"other.pages = {other.pages}")
+#         return self.pages+other.pages
+
+# b1=book(100)
+# b2=book(200)
+# b3=b1+b2
+# print(b3)
+
+# overloading in python --------------
+
+# class Calculator:
+#     def add(self, *args):
+#         return sum(args)
+
+# calc = Calculator()
+# print(calc.add(5))             
+# print(calc.add(5, 10))         
+# print(calc.add(5, 10, 15, 20))
+
+# overriding in python ----------------------
+
+# internet sa dhund lo
+
+# operator overloading (+) ki ----------------------------------
+
+# class point:
+#     def __init__(self,x,y):
+#         self.x=x
+#         self.y=y
+#     def __add__(self,other):
+#         return point(self.x+other.x,self.y+other.y)
+#     def display(self):
+#         print(self.x,self.y,sep=',')
+# obj1=point(2,4)
+# obj2=point(3,6)
+# obj3=obj1+obj2
+# obj3.display()
+
 
