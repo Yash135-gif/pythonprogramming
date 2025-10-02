@@ -3666,17 +3666,55 @@ b={3,6,7,8}
 # if (x := 5) > 3:
 #     print(x)
 
-l=[1,2,3,4,5]
-def greater3(n):
-    if n>3:
-        return n
-result=list(filter(greater3,l))
-print(result)
+# l=[1,2,3,4,5]
+# def greater3(n):
+#     if n>3:
+#         return n
+# result=list(filter(greater3,l))
+# print(result)
 
+from functools import reduce
 
+# l=[1,3,3,2,6,3]
+# def bigger(x,y):
+#     if x>y:
+#         return x
+#     else:
+#         return y
+# result=reduce(bigger,l)
+# print(result)
 
+# result=reduce(lambda x,y: x if x>y else y,l)
+# print(result)
+# result=list(map(lambda x: x+2,l))
+# print(result)
+# result=list(filter(lambda x: x if x%2==0 else None,l))
+# print(result)
 
+# def change(func):
+#     def wrapper(x,y):
+#         x=x+10
+#         y=y+10
+#         a=func(x,y)
+#         return a
+#     return wrapper
+# @change
+# def add(x,y):
+#     return x+y
+# print(add(5,10))
 
+# def mydeco(func):
+#     def wrapper(x,y):
+#         x=x*y
+#         y=0
+#         result=func(x,y)
+#         return result
+#     return wrapper
+# @mydeco
+# def add(x,y):
+#     return x+y
+# print(add(10,10))
+    
 
 
 

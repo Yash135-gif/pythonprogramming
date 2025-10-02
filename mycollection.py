@@ -993,6 +993,23 @@
 # print(next(inc))
 # print(next(inc))
 
+# Good decorator question ---------------------
 
+def only_even_args(func):
+    def wrapper(*args):
+        check=0
+        for i in args:
+            if i%2!=0:
+                check=check+1
+        if check>0:
+            print("only even allowed")
+        if check==0:
+            func(args)
+    return wrapper
+    
+@only_even_args
+def even(*args):
+    print("all are even")
+even(2,4,8)
 
 
