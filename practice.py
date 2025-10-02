@@ -3597,16 +3597,82 @@ b={3,6,7,8}
 # res=even_numbers(10)
 # print(res)
 
+# def sum():
+#     pass
+# print(id(sum))
+# print(sum())
+# def myinfo(name='yash',age=21,quali='BCA'):
+#     print(name)
+#     print(age)
+#     print(quali)
+# myinfo('vansh')
+# def store(*args):
+#     print(args)
+#     print(type(args))
+# store(2)
 
+# def add(*args):
+#     sum=0
+#     for i in args:
+#         for j in i:
+#             sum=sum+j
+#     return sum
+    
+# l=[]
+# n=int(input("enter how many numbers you want to operate with: "))
+# for i in range(n):
+#     num=int(input("enter number: "))
+#     l.append(num)
+# print(add(l))
 
+# def greet(name,message):
+#     print(f"{message} {name}")
+# greet('yash',message='hii')
 
+# def info(name,age,city):
+#     print(name)
+#     print(age)
+#     print(city)
+# info(city='bhopal',name='yash',age='21')
 
+# def info(name,message='hey'):
+#     print(f'{message} {name}')
+# info('ayesha')
+# info('ayesha',message='hello')
 
+# def info(**kwargs):
+#     print(kwargs)
+#     print(type(kwargs))
+#     # for key,value in kwargs.items():
+#     #     print(f'{key}:{value}')
+# info(name='yash',age=21,quali='BCA')
 
+# l=[1,2,3,4,5]
+# ll=[6,7,8,9,10]
+# def add(x,y):
+#     return x+y
 
+# result=list(map(add,l,ll))
+# print(result)
 
+# l=[1,2,3,4,5]
+# ll=[1,2,3,4,5]
+# lll=[1,2]
+# def add(x,y,z):
+#     return x+y+z
+# result=list(map(add,l,ll,lll))
+# print(result)
 
- 
+# if (x := 5) > 3:
+#     print(x)
+
+l=[1,2,3,4,5]
+def greater3(n):
+    if n>3:
+        return n
+result=list(filter(greater3,l))
+print(result)
+
 
 
 

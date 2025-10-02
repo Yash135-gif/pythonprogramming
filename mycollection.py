@@ -947,4 +947,52 @@
 # obj3=obj1+obj2
 # obj3.display()
 
+# decorator question ------------------
+
+# def mydecorator(func):
+#     def wrapper(name):
+#         print('before function called')
+#         func(name)
+#         print('after function called')
+#     return wrapper
+
+# @mydecorator
+# def greet(name):
+#     print('hello ' + name)
+
+# greet('yash')
+
+# generator question ---------------------
+
+# def count_up_to(n):
+#     i=1
+#     while i<=n:
+#         yield i
+#         i=i+1
+
+# for num in count_up_to(5):
+#     print(num)
+
+# generator question ----------------
+
+# def increament():
+#     for i in range(10):
+#         yield i
+
+# for num in increament():
+#     print(num)
+    
+# generator question ------------
+
+# def increament(n):
+#     for i in range(n):
+#         yield i
+
+# inc=increament(10)
+# print(next(inc))
+# print(next(inc))
+# print(next(inc))
+
+
+
 
