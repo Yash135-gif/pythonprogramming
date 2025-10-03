@@ -3715,11 +3715,115 @@ from functools import reduce
 #     return x+y
 # print(add(10,10))
     
+# class student:
+#     '''this is a class'''
+#     def __init__(self):
+#         print("constructor 1 called")
+#     def __init__(self):
+#         print("constructor 2 called")
+#     def __init__(self):
+#         print('consturctor 3 called')
 
+# obj=student()
 
+# print(dir(student))
+# print(dir())
+# print(__name__)
+# print(student.__doc__)
+# print(student.__dict__)
+# print(student.__module__)
 
+# class student:
+#     def __init__(self,name,grad):
+#         self.n=name
+#         self.g=grad
+# obj1=student('yash','BCA')
+# print(obj1.n,obj1.g)
+# obj2=student('vansh','MCA')
+# print(obj2.n,obj2.g)
 
+# class car:
+#     wheels=4
+#     def __init__(self,name):
+#         self.name=name
+#     def show(self):
+#         print(f'{self.name} car has wheels {car.wheels}')
+# c1=car('BMW')
+# c2=car('Swift')
 
+# c1.show()
+# c2.show()
+ 
+# def my_dec(func):
+#     def wrapper(*args):
+#         for i in args:
+#             if i%2!=0:
+#                 return 'only evens allowed'
+#         return func(*args)
+#     return wrapper
+        
+# @my_dec
+# def plus(*args):
+#     return sum(args)
+# print(plus(2,4))
+
+# class A:
+#     def display1(self):
+#         print("class A")
+# class B(A):
+#     def display2(self):
+#         print("class B")
+# class C(A):
+#     def display3(self):
+#         print('class C')
+# class D(B,C):
+#     def display4(self):
+#         print('class D')
+# obj=D()
+# obj.display1()
+# obj.display2()
+# obj.display3()
+# obj.display4()
+
+# class parent:
+#     def show(self):
+#         print('parent method')
+# class child(parent):
+#     def show(self):
+#         super().show()
+#         print('child class')
+# obj=child()
+# obj.show()
+# obj.show()
+
+# class student:
+#     def __init__(self):
+#         self._name='yash'
+#         self.__grad='BCA'
+
+#     def get_grad(self):
+#         print(self.__grad)
+    
+# class book(student):
+#     pass
+# obj1=book()
+# print(obj1._student__grad)
+# obj2=student()
+# print(obj2._student__grad)
+# print(obj2.get_grad())
+
+# class A:
+#     def song(self):
+#         print('song 1')
+# class B:
+#     def song(self):
+#         print('song 2')
+# class C:
+#     def song(self):
+#         print('song 3')
+# l=[A(),B(),C()]
+# for i in l:
+#     i.song()
 
 
 

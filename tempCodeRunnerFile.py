@@ -1,1 +1,1 @@
-class student:
+obj.show()

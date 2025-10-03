@@ -995,21 +995,35 @@
 
 # Good decorator question ---------------------
 
-def only_even_args(func):
-    def wrapper(*args):
-        check=0
-        for i in args:
-            if i%2!=0:
-                check=check+1
-        if check>0:
-            print("only even allowed")
-        if check==0:
-            func(args)
-    return wrapper
+# def only_even_args(func):
+#     def wrapper(*args):
+#         check=0
+#         for i in args:
+#             if i%2!=0:
+#                 check=check+1
+#         if check>0:
+#             print("only even allowed")
+#         if check==0:
+#             func(args)
+#     return wrapper
     
-@only_even_args
-def even(*args):
-    print("all are even")
-even(2,4,8)
+# @only_even_args
+# def even(*args):
+#     print("all are even")
+# even(2,4,8)
 
+# polymorphism question --------------
 
+# class NewAdd:
+#     def __init__(self,x,y):
+#         self.x,self.y=x,y
+    
+#     def __add__(self,other):
+#         return NewAdd(self.x+other.x,self.y+other.y)
+    
+#     def display(self):
+#         print(self.x,self.y,sep=',')
+# obj1=NewAdd(2,4)
+# obj2=NewAdd(4,2)
+# obj3=obj1+obj2
+# obj3.display()
